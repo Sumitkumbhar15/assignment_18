@@ -4,8 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-cards{
+            border: 5px solid;
+            height: 300px;
+            width: 250px;
+            margin: 10px;
+            margin-top: 40px;
+            position: relative;
+            background-image: url("images/dosa.jpg");
+        }
+
+        .product-img{
+            height: 100px;
+            border-radius: 100px;
+            position: absolute;
+            top: -40px;
+            margin-left: 30%;
+        }
+
+        .product-name{
+            margin-top: 70px;
+            margin-left: 90px;
+        }
+
+        p{
+            padding: 8px;
+            color: yellow;
+        }
+
+        .buy{
+            background-color: bisque;
+            padding: 6px;
+            margin-left: 18px;
+            height: 40px;
+            width: 100px;
+            border-radius: 15px;
+            cursor: pointer;
+            
+        }
+
+        .buy:hover{
+            background-color: blueviolet;
+            color: aliceblue;
+            transition: 0.8s;
+            box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.9);
+
+        }
+
+        @media (min-width: 700px) and (max-width: 992px) {
+           .product-cards{
+            border: 10px solid;
+            height: 300px;
+            width: 250px;
+            margin: 10px;
+            margin-top: 40px;
+            position: relative;
+            background-image: url("images/pizza.jpg");
+        }
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+           .product-cards{
+            border: 5px solid;
+            height: 300px;
+            width: 250px;
+            margin: 10px;
+            margin-top: 40px;
+            position: relative;
+            background-image: url("images/vadapav.jpg");
+        }
+        }
+
+        @media (min-width: 1201px) and (max-width: 1400px) {
+           .product-cards{
+            border: 5px solid;
+            height: 300px;
+            width: 250px;
+            margin: 10px;
+            margin-top: 40px;
+            position: relative;
+            background-image: url("images/vade.jpg");
+        }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <!--Card 1-->
+        <div class="product-cards">
+            <img src="./images/donut.jpg" class="product-img" alt="img">
+            <h2 class="product-name">Donut</h2>
+            <p>Donuts are sweet, fried pastries that come in many flavors and styles. Loved by all ages, they’re perfect with coffee or as a tasty treat anytime.</p>
+            <input type="button" class="buy" name="Buy now" value="Buy now">
+
+            <input type="button" class="buy" name="View More" value="View More">
+        </div>
+
+        <!--Card 2-->
+        <div class="product-cards">
+            <img src="./images/dosa.jpg" class="product-img" alt="img">
+            <h2 class="product-name">Dosa</h2>
+            <p>Dosa is a crispy, savory South Indian pancake made from fermented rice and urad dal batter. It's often served with chutney and sambar for a delicious, wholesome meal.</p>
+            <input type="button" class="buy" name="Buy now" value="Buy now">
+
+            <input type="button" class="buy" name="View More" value="View More">
+        </div>
+
+        <!--Card 3-->
+        <div class="product-cards">
+            <img src="./images/frenchfries.jpg" class="product-img" alt="img">
+            <h2 class="product-name">FrenchFries</h2>
+            <p>French fries are crispy, golden potato sticks that are deep-fried and lightly salted. They're a popular snack or side dish, often served with ketchup or sauces.</p>
+            <input type="button" class="buy" name="Buy now" value="Buy now">
+
+            <input type="button" class="buy" name="View More" value="View More">
+        </div>
+
+        <!--Card 4-->
+        <div class="product-cards">
+            <img src="./images/idli.jpg" class="product-img" alt="img">
+            <h2 class="product-name">Idli</h2>
+            <p>Idli is a traditional South Indian breakfast dish made from steamed rice and lent</p>
+            <input type="button" class="buy" name="Buy now" value="Buy now">
+
+            <input type="button" class="buy" name="View More" value="View More">
+        </div>
+
+        <!--Card 5-->
+        <div class="product-cards">
+            <img src="./images/pizza.jpg" class="product-img" alt="img">
+            <h2 class="product-name">Pizza</h2>
+            <p>Pizza is a popular Italian dish made from a flatbread crust topped with tomato sauce</p>
+            <input type="button" class="buy" name="Buy now" value="Buy now">
+
+            <input type="button" class="buy" name="View More" value="View More">
+        </div>
+
+        <!--Card 6-->
+        <div class="product-cards">
+            <img src="./images/salad.jpg" class="product-img" alt="img">
+            <h2 class="product-name">Salad</h2>
+            <p>Salad is a dish made from a mixture of raw or cooked vegetables, fruits</p>
+            <input type="button" class="buy" name="Buy now" value="Buy now">
+
+            <input type="button" class="buy" name="View More" value="View More">
+        </div>
+
+        <!--Card 7-->
+        <div class="product-cards">
+            <img src="./images/vadapav.jpg" class="product-img" alt="img">
+            <h2 class="product-name">VadaPav</h2>
+            <p>Vada pav is a popular Indian street food made from a deep-fried potato dum</p>
+            <input type="button" class="buy" name="Buy now" value="Buy now">
+
+            <input type="button" class="buy" name="View More" value="View More">
+        </div>
+
+        <!--Card 8-->
+        <div class="product-cards">
+            <img src="./images/vade.jpg" class="product-img" alt="img">
+            <h2 class="product-name">Vada</h2>
+            <p>Vada is a popular Indian snack made from a deep-fried lentil dumpling</p>
+            <input type="button" class="buy" name="Buy now" value="Buy now">
+
+            <input type="button" class="buy" name="View More" value="View More">
+        </div>        
+
+    </div>
 </body>
 </html>
