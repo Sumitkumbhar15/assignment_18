@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .navbar{
+            background-color: grey;
+            height: 80px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            display: flex;
+        }
+
+        .logo{
+            font-size: 30px;
+            padding: 20px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .navlink{
+            position: relative;
+            left: 450px;
+            margin-left: 30px;
+            padding-top: 20px;
+            font-size: 25px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
         .container{
             display: flex;
             flex-wrap: wrap;
@@ -68,6 +93,16 @@
             position: relative;
             background-image: url("images/pizza.jpg");
         }
+
+        .navlink{
+            position: relative;
+            left: 150px;
+            margin-left: 15px;
+            padding-top: 20px;
+            font-size: 25px;
+            text-decoration: none;
+            color: aliceblue;
+        }
         }
 
         @media (min-width: 992px) and (max-width: 1200px) {
@@ -96,6 +131,15 @@
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="#" class="logo">HOTEL</a>
+        <a href="#" class="navlink">Home</a>
+        <a href="#" class="navlink">Category</a>
+        <a href="#" class="navlink">About-us</a>
+        <a href="#" class="navlink">Contact-us</a>
+        <a href="#" class="navlink">Login</a>
+    </div>
+
     <div class="container">
         <!--Card 1-->
         <div class="product-cards">
